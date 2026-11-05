@@ -1,23 +1,19 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Nunito_Sans } from "next/font/google";
 import { Providers } from "@/components/ui/Providers";
 import "./globals.css";
 
-// DESIGN.md (toy box): Bricolage Grotesque for chunky headings, Nunito Sans (rounded, very readable) for everything else.
-const chunky = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-chunky", weight: ["600", "700", "800"] });
-const sans = Nunito_Sans({ subsets: ["latin"], variable: "--font-body", weight: ["400", "600", "700", "800"] });
 
 export const metadata: Metadata = {
-  title: { default: "Cutaway", template: "%s · Cutaway" },
-  description: "Show Kimi K3.1 Pro any machine and see every part inside it in 3D, with drawings, a step-by-step teardown and a quiz.",
+  title: { default: "Cutaway | Nebius Token Factory", template: "%s · Cutaway | Token Factory" },
+  description: "Explore interactive 3D machine illustrations generated with Kimi K3.1 Pro on Nebius Token Factory. Built by Amitesh Anand and Studio1HQ.",
 };
 
-// Applied before paint so the page never flashes the wrong theme. Light is the default.
-const themeScript = `try{var t=localStorage.getItem("cutaway-theme");document.documentElement.dataset.theme=t==="dark"?"dark":"light"}catch(e){}`;
+// Token Factory starts in dark mode; an explicit visitor preference is preserved.
+const themeScript = `try{var t=localStorage.getItem("cutaway-theme");document.documentElement.dataset.theme=t==="light"?"light":"dark"}catch(e){}`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${chunky.variable} ${sans.variable}`} suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>

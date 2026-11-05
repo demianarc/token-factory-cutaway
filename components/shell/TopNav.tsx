@@ -17,10 +17,15 @@ export function TopNav() {
         </Link>
         <NavLinks />
         <div className={styles.navRight}>
-          <span className={styles.model}>Kimi K3.1 Pro on Nebius</span>
+          <span className={styles.model}>Kimi K3.1 Pro on Token Factory</span>
           <ThemeToggle compact />
           <GrownUpsMenu status={status} ok={!!c.apiKey} />
         </div>
+      </div>
+      <div className="tf-builder-credit">
+        <span>Original build by <a href="https://github.com/Astrodevil" target="_blank" rel="noreferrer">Amitesh Anand</a> / <a href="https://studio1hq.com" target="_blank" rel="noreferrer">Studio1HQ</a>.</span>
+        <a href="https://github.com/Studio1-OSS/Cutaway" target="_blank" rel="noreferrer">Original source</a>
+        <span>·</span><a href="https://github.com/demianarc/token-factory-cutaway" target="_blank" rel="noreferrer">TF edition</a>
       </div>
     </header>
   );

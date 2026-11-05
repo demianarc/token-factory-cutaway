@@ -2,7 +2,7 @@
 
 <img src="docs/logo.svg" alt="Cutaway logo: a yellow tile with a cut-open box" width="96" height="96">
 
-# Cutaway
+# Cutaway · Nebius Token Factory edition
 
 ### What's inside a machine?
 
@@ -83,14 +83,30 @@ Kimi K3.1 Pro can design in 3D, and Cutaway lets it do the whole job:
 </tr>
 </table>
 
+## Token Factory edition
+
+Original build by [Amitesh Anand](https://github.com/Astrodevil) / [Studio1HQ](https://studio1hq.com). This fork keeps the full generator and adds the official Token Factory visual design plus a static, interactive showcase of the two saved machines. See [edition provenance](BRAND-EDITION.md).
+
+### Host the saved examples without a key
+
+```bash
+git clone https://github.com/demianarc/token-factory-cutaway.git
+cd token-factory-cutaway
+pnpm install --frozen-lockfile
+pnpm showcase:dev            # http://127.0.0.1:5174
+pnpm showcase:build          # output: showcase-dist/
+```
+
+Serve `showcase-dist/` on a static host. It uses the original interactive viewer and stored geometry: orbit, disassembly, selection, X-ray and slicing work locally in the browser. Exploring it makes no inference requests and cannot generate new machines. The full application below provides generation. Never put an API key in the static bundle.
+
 ## Get started
 
 Requires Node.js 22.15 or newer and pnpm.
 
 ```bash
-git clone https://github.com/Studio1-OSS/cutaway.git
-cd cutaway
-pnpm install
+git clone https://github.com/demianarc/token-factory-cutaway.git
+cd token-factory-cutaway
+pnpm install --frozen-lockfile
 cp .env.example .env        # paste your Nebius key
 pnpm dev                    # http://localhost:3000
 ```
@@ -119,7 +135,9 @@ Create a key in [Nebius Token Factory](https://tokenfactory.nebius.com/project/a
 
 </details>
 
-## Time and cost
+## Recorded upstream time and cost
+
+The figures below are the original builder’s recorded example, not a new run of this TF edition or a current price quote. Use the live Token Factory console for current pricing.
 
 Kimi K3.1 Pro always thinks before it answers, and it writes a lot: every part is real three.js code. The jet engine above, a full run on Nebius with Kimi thinking at its maximum on every step:
 
@@ -202,7 +220,15 @@ Built with Next.js 16, React 19, three.js, better-sqlite3, zod, esbuild, jpeg-js
 pnpm test        # parser, schema, checks, kit, both sandboxes, renderer, framing, pricing, database, pipeline and background job (model mocked)
 pnpm typecheck
 pnpm build
+pnpm showcase:build
+# With the showcase served locally:
+pnpm exec playwright install chromium
+pnpm showcase:test
 ```
+
+## TF edition verification
+
+On 5 November 2026: 48 unit tests, TypeScript, the Next.js production build and the static showcase build passed. The static production bundle built all 47 engine parts and 34 toothbrush parts with no failed geometry, runtime errors or external requests. Browser checks covered selection, disassembly/reassembly, slice/reset, X-ray, the walkthrough, machine switching and the 390px mobile layout. No fresh live model generation was run.
 
 ## License
 

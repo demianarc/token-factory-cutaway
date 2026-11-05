@@ -35,3 +35,9 @@ coverage/
 
 # deploys
 .vercel/
+
+# Static hosted companion
+showcase-dist/
+
+# Local browser verification
+qa/

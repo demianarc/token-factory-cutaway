@@ -1,5 +1,6 @@
 @import "driver.js/dist/driver.css";
 
+
 :root {
   /* DESIGN.md (toy box): lilac page, white cards with thick outlines, bright blocks, chunky friendly type. */
   --bg: #ede7ff;
@@ -666,3 +667,82 @@ select.input {
     background: #fff;
   }
 }
+
+/* Official Token Factory design tokens; original application structure preserved. */
+@font-face{font-family:Gramatika;src:url('/brand/fonts/GramatikaBold.otf') format('opentype');font-weight:700;font-display:swap}
+@font-face{font-family:Inter;src:url('/brand/fonts/Inter-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+:root {
+  /* — Brand palette (shared with Nebius) — */
+  --color-lime:           #DAFF33;
+  --color-lime-alt:       #D6F34C;
+  --color-lime-logo:      #E0FF4F; /* exact pill fill used in the Token Factory logo mark */
+  --color-deep-blue:      #052B42;
+  --color-light-blue:     #F0F8FF;
+  --color-lavender:       #C1C1FF;
+
+  /* — Neutrals — */
+  --color-white:          #FFFFFF;
+  --color-black:          #052B42; /* always use Deep Blue, never #000 */
+
+  /* — Dark-surface scale (Token Factory is dark-theme-first; #001A2B is the exact slide-master navy used across real decks) — */
+  --color-navy-900:       #001A2B;
+  --color-navy-800:       #002638;
+  --color-navy-700:       #003044;
+  --color-navy-600:       #0A4566;
+  --color-navy-border:    rgba(255, 255, 255, 0.12);
+  --color-accent-purple:  #C996FC; /* deck highlight accent, seen across real Token Factory decks */
+
+  /* — Semantic: backgrounds (dark-first) — */
+  --color-bg-primary:     #001A2B;
+  --color-bg-secondary:   #002638;
+  --color-bg-tertiary:    #003044;
+  --color-bg-elevated:    #0A4566;
+  --color-bg-light:       #FFFFFF;   /* for light-mode / print surfaces only */
+  --color-bg-lime:        #DAFF33;
+  --color-bg-overlay:     rgba(0, 26, 43, 0.64);
+
+  /* — Semantic: text — */
+  --color-text-primary:   #FFFFFF;
+  --color-text-secondary: rgba(255, 255, 255, 0.68);
+  --color-text-muted:     rgba(255, 255, 255, 0.48);
+  --color-text-on-light:  #052B42;
+  --color-text-on-dark:   #FFFFFF;
+  --color-text-on-lime:   #052B42;
+  --color-text-on-violet: #FFFFFF;
+
+  /* — Semantic: borders — */
+  --color-border:         rgba(255, 255, 255, 0.12);
+  --color-border-strong:  rgba(255, 255, 255, 0.24);
+  --color-border-dark:    rgba(255, 255, 255, 0.14);
+
+  /* — Gradient (Token Factory signature — violet → cyan → green → lime, confirmed across real decks) — */
+  /* RULE: if 2+ gradient-filled/outlined elements (text, pills, card borders, bars) appear on one slide/page,
+     they must read as one continuous sweep, not each restarting its own 0%-100%.
+     Implementation: background-size:1920px 1080px; background-attachment:fixed; on every such element
+     (canvas-fixed gradient — works for background-clip:text, solid fills, and gradient borders alike).
+     Never give a short/narrow gradient element its own auto-sized 0-100% gradient — it samples the wrong slice. */
+  --gradient-brand:        linear-gradient(257deg, #9E9DFF 0%, #31FCF6 35.19%, #8DFF62 70.53%, #E0FF4F 100%); /* @kind color */
+  --gradient-brand-radial: radial-gradient(120% 140% at 97% 11%, #7781EE 0%, #3AB8F9 20%, #40DDD0 40%, #88FA93 61%, #BAFC72 80%, #E0FF4F 100%); /* @kind color */
+  --gradient-dark-lime:    linear-gradient(191deg, #003044 15%, #001A2B 100%); /* @kind color */
+  --gradient-accent:       linear-gradient(257deg, #9E9DFF 0%, #31FCF6 35.19%, #8DFF62 70.53%, #E0FF4F 100%); /* @kind color */
+  --gradient-base:         linear-gradient(180deg, #CEFF74 0%, #99FEAB 25%, #5EEFDE 50%, #53C4FD 75%, #7E9BFF 100%); /* @kind color */
+}
+
+:root,:root[data-theme="dark"]{
+ --bg:var(--color-navy-900);--bg-2:var(--color-navy-800);--bg-grid:rgba(255,255,255,.025);
+ --panel:var(--color-navy-800);--panel-2:var(--color-navy-700);--panel-3:#07374c;--panel-4:var(--color-navy-600);
+ --ink:#fff;--ink-2:#d5e2eb;--ink-3:#a8becd;--ink-4:#9aafbd;
+ --line:rgba(255,255,255,.14);--line-2:rgba(255,255,255,.28);--rule:rgba(255,255,255,.17);--stone:#fff;
+ --accent:var(--color-lime);--accent-2:#e5ff78;--accent-ink:var(--color-deep-blue);--accent-soft:rgba(218,255,51,.1);
+ --pick:var(--color-lime);--pick-ink:var(--color-deep-blue);--hi:var(--color-lime);--hi-soft:rgba(218,255,51,.1);
+ --font-body:Inter;--font-chunky:Gramatika;--font-sans:Inter,system-ui,sans-serif;--font-display:Gramatika,Arial,sans-serif;
+ --shadow-1:0 2px 12px rgba(0,0,0,.12);--shadow-2:0 8px 28px rgba(0,0,0,.16);--shadow-3:0 14px 38px rgba(0,0,0,.18);
+ --radius:12px;--radius-sm:8px;color-scheme:dark;
+}
+:root[data-theme="light"]{--bg:#f0f8ff;--bg-2:#e7f0f5;--panel:#fff;--panel-2:#f6faff;--panel-3:#e5eff5;--panel-4:#d9e9f2;--ink:#052b42;--ink-2:#29495c;--ink-3:#486574;--ink-4:#607d8b;--line:#cfdee7;--line-2:#a4bdcc;--rule:#cfdee7;--stone:#052b42;--hi:#526400;--hi-soft:#eff8c7;color-scheme:light}
+.stage-surface{--bg:#eef6fa;--panel:#fff;--panel-2:#f6faff;--panel-3:#e7f1f7;--panel-4:#d6e6ef;--ink:#052b42;--ink-2:#29495c;--ink-3:#486574;--line:#d4e2eb;--rule:#b7ccd9;--accent:#526400;--accent-ink:#fff;--hi:#526400;--hi-soft:#eff8c7;color:var(--ink);color-scheme:light}
+.tf-builder-credit{margin:12px auto 0;max-width:1296px;padding:0 16px;font-size:12px;color:var(--ink-3);line-height:1.6;display:flex;gap:8px;flex-wrap:wrap}
+.tf-builder-credit a{color:var(--ink-2);text-decoration:underline;text-underline-offset:3px}
+
+/* TF accent for controls on the light 3D stage. */
+.stage-surface{--pink:#DAFF33}

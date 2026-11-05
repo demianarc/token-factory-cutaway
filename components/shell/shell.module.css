@@ -100,3 +100,6 @@
     display: none;
   }
 }
+
+/* TF theme: restrained surfaces, clear lime action. */
+.navInner{border-width:1px;border-radius:12px;box-shadow:none}.model{background:var(--accent-soft);border:1px solid var(--line);color:var(--hi);font-weight:600}.link{font-weight:600}

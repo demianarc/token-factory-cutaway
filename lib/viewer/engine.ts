@@ -17,7 +17,7 @@ export const FLOW_COLORS: Record<FlowKind, string> = {
 };
 
 // Bright pink glow for the picked and pointed-at part: stands out on the light stage.
-const ACCENT = new THREE.Color("#ff3d8b");
+const ACCENT = new THREE.Color("#DAFF33");
 export const VIEW_DIRS: Record<ViewName, THREE.Vector3> = {
   front: new THREE.Vector3(0, 0.08, 1),
   back: new THREE.Vector3(0, 0.08, -1),
