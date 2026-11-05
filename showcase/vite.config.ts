@@ -3,7 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 const folder=path.dirname(fileURLToPath(import.meta.url));
 export default defineConfig({
- root:folder,publicDir:path.resolve(folder,'../public'),
+ base:"./",root:folder,publicDir:path.resolve(folder,'../public'),
  resolve:{alias:{'@':path.resolve(folder,'..')},dedupe:['react','react-dom','three']},
  esbuild:{jsx:'automatic'},worker:{format:'es'},
  build:{outDir:path.resolve(folder,'../showcase-dist'),emptyOutDir:true},
