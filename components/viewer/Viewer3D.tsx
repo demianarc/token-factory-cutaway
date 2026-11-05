@@ -30,6 +30,8 @@ export type ViewerProps = {
   /** Ask the viewer to set the explode amount (e.g. from a "Take it apart" button). */
   explodeRequest?: { value: number; nonce: number } | null;
   toolbar?: boolean;
+  /** Reframe the full saved model after the disassembly slider is committed. */
+  frameOnDisassembly?: boolean;
   keyboard?: boolean;
   /** False while the viewer is hidden behind another tab; rendering pauses. */
   active?: boolean;
@@ -413,7 +415,7 @@ export function Viewer3D(p: ViewerProps) {
         <div className={`${styles.dock} no-print`} data-inset="bottom">
           <div className={styles.apart} data-tour="apart">
             <span className={styles.apartEnd}>Together</span>
-            <Slider.Root className="slider" min={0} max={1} step={0.01} value={[explode]} onValueChange={([v]) => setExplode(v)} aria-label="Take it apart">
+            <Slider.Root className="slider" min={0} max={1} step={0.01} value={[explode]} onValueChange={([v]) => setExplode(v)} onValueCommit={p.frameOnDisassembly ? ([v]) => { engineRef.current?.setExplode(v); engineRef.current?.fit("iso"); } : undefined} aria-label="Take it apart">
               <Slider.Track className="slider-track">
                 <Slider.Range className="slider-range" />
               </Slider.Track>
