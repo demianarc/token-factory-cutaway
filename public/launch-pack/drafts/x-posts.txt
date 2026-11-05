@@ -1,0 +1,59 @@
+@nebiustf — DRAFTS, NOT POSTED
+All three demos are public. Cookbook PR #89 is merged.
+
+
+CUTAWAY
+
+POST
+Pull apart a jet engine in your browser.
+
+Cutaway uses Kimi K3.1 Pro on Nebius Token Factory to turn a name or photo into an interactive 3D machine.
+
+Built by @Astrodevil_ / Studio1HQ.
+
+Try the saved examples: https://nebius-tf-cutaway.lovable.app/
+
+REPLY / BREAKDOWN
+Kimi writes structured part descriptions and Three.js builders. Cutaway builds the geometry in a sandbox, renders four views for review, then saves the result.
+
+The demo explores saved output. The cookbook includes the generator.
+
+Code: https://github.com/nebius/token-factory-cookbook/tree/main/apps/cutaway
+
+
+CODETRAIL
+
+POST
+New repo? Start with the map.
+
+Codetrail turns source into architecture diagrams, docs and guided tours, with references checked against the code.
+
+Built by Studio1HQ. Run yours with Kimi on Token Factory.
+
+Explore a sample: https://nebius-tf-codetrail.lovable.app/
+
+REPLY / BREAKDOWN
+The hosted preview walks through a curated, source-checked Polka example. It makes no model calls.
+
+Run the full app with your Token Factory key to analyse another repo, generate docs and ask questions.
+
+Code + setup: https://github.com/nebius/token-factory-cookbook/tree/main/apps/codetrail
+
+
+EXPLODE ANYTHING
+
+POST
+This camera is built in code.
+
+Pull apart 36 components, adjust the aperture and look behind the shutter. All interactive, right in your browser.
+
+Explore our TF edition of @HowDevelop’s Explode Anything.
+
+Demo: https://nebius-tf-explode.lovable.app/
+
+REPLY / BREAKDOWN
+The exhibit uses procedural Three.js geometry and needs no API key to explore.
+
+Want to build your own? Start with the source and original build brief, then use Kimi through the cookbook’s OpenCode setup.
+
+Code + setup: https://github.com/nebius/token-factory-cookbook/tree/main/apps/explode-anything

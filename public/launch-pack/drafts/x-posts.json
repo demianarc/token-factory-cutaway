@@ -1,0 +1,64 @@
+{
+  "account": "@nebiustf",
+  "status": "Ready for editorial review; demos public; cookbook PR #89 merged; X posts not published",
+  "order": [
+    "cutaway",
+    "codetrail",
+    "camera"
+  ],
+  "posts": [
+    {
+      "id": "cutaway",
+      "name": "Cutaway",
+      "builder": "Amitesh Anand / Studio1HQ",
+      "source": "https://github.com/Studio1-OSS/Cutaway",
+      "fork": "https://github.com/demianarc/token-factory-cutaway",
+      "demo": "https://nebius-tf-cutaway.lovable.app/",
+      "cookbook": "https://github.com/nebius/token-factory-cookbook/tree/main/apps/cutaway",
+      "video": "../media/cutaway-walkthrough.mp4",
+      "text": "Pull apart a jet engine in your browser.\n\nCutaway uses Kimi K3.1 Pro on Nebius Token Factory to turn a name or photo into an interactive 3D machine.\n\nBuilt by @Astrodevil_ / Studio1HQ.\n\nTry the saved examples: https://nebius-tf-cutaway.lovable.app/",
+      "reply": "Kimi writes structured part descriptions and Three.js builders. Cutaway builds the geometry in a sandbox, renders four views for review, then saves the result.\n\nThe demo explores saved output. The cookbook includes the generator.\n\nCode: https://github.com/nebius/token-factory-cookbook/tree/main/apps/cutaway",
+      "text_weighted_characters": 233,
+      "reply_weighted_characters": 260,
+      "publishing_status": "Draft — not posted",
+      "walkthrough_audio": "Silent screen walkthrough",
+      "walkthrough_speed": "4×"
+    },
+    {
+      "id": "codetrail",
+      "name": "Codetrail",
+      "builder": "Studio1HQ",
+      "source": "https://github.com/Studio1-OSS/Codetrail",
+      "fork": "https://github.com/demianarc/token-factory-codetrail",
+      "demo": "https://nebius-tf-codetrail.lovable.app/",
+      "cookbook": "https://github.com/nebius/token-factory-cookbook/tree/main/apps/codetrail",
+      "video": "../media/codetrail-walkthrough.mp4",
+      "text": "New repo? Start with the map.\n\nCodetrail turns source into architecture diagrams, docs and guided tours, with references checked against the code.\n\nBuilt by Studio1HQ. Run yours with Kimi on Token Factory.\n\nExplore a sample: https://nebius-tf-codetrail.lovable.app/",
+      "reply": "The hosted preview walks through a curated, source-checked Polka example. It makes no model calls.\n\nRun the full app with your Token Factory key to analyse another repo, generate docs and ask questions.\n\nCode + setup: https://github.com/nebius/token-factory-cookbook/tree/main/apps/codetrail",
+      "text_weighted_characters": 248,
+      "reply_weighted_characters": 241,
+      "publishing_status": "Draft — not posted",
+      "walkthrough_audio": "Silent screen walkthrough",
+      "walkthrough_speed": "1×"
+    },
+    {
+      "id": "camera",
+      "name": "Explode Anything",
+      "builder": "Shivay Lamba",
+      "source": "https://github.com/shivaylamba/explode-anything",
+      "fork": "https://github.com/demianarc/token-factory-explode",
+      "demo": "https://nebius-tf-explode.lovable.app/",
+      "cookbook": "https://github.com/nebius/token-factory-cookbook/tree/main/apps/explode-anything",
+      "video": "../media/camera-walkthrough.mp4",
+      "text": "This camera is built in code.\n\nPull apart 36 components, adjust the aperture and look behind the shutter. All interactive, right in your browser.\n\nExplore our TF edition of @HowDevelop’s Explode Anything.\n\nDemo: https://nebius-tf-explode.lovable.app/",
+      "reply": "The exhibit uses procedural Three.js geometry and needs no API key to explore.\n\nWant to build your own? Start with the source and original build brief, then use Kimi through the cookbook’s OpenCode setup.\n\nCode + setup: https://github.com/nebius/token-factory-cookbook/tree/main/apps/explode-anything",
+      "text_weighted_characters": 235,
+      "reply_weighted_characters": 243,
+      "publishing_status": "Draft — not posted",
+      "walkthrough_audio": "Silent screen walkthrough",
+      "walkthrough_speed": "2×"
+    }
+  ],
+  "claims_note": "No fresh live model inference was run. Do not claim one prompt, a benchmark win, cost/time performance, manufacturer-accurate geometry, or that a particular model produced the original camera build.",
+  "verified_at": "2026-11-05T13:26:10Z"
+}
