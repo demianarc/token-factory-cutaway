@@ -15,9 +15,9 @@
       "demo": "https://nebius-tf-cutaway.lovable.app/",
       "cookbook": "https://github.com/nebius/token-factory-cookbook/tree/main/apps/cutaway",
       "video": "../media/cutaway-walkthrough.mp4",
-      "text": "Pull apart a jet engine in your browser.\n\nCutaway uses Kimi K3.1 Pro on Nebius Token Factory to turn a name or photo into an interactive 3D machine.\n\nBuilt by @Astrodevil_ / Studio1HQ.\n\nTry the saved examples: https://nebius-tf-cutaway.lovable.app/",
+      "text": "Learn how machines work by taking them apart.\n\nGive Cutaway a name or photo. Kimi K3.1 Pro on Nebius Token Factory builds an interactive 3D model you can pull apart and explore.\n\nBuilt by @Astrodevil_ / Studio1HQ.\n\nTry the saved examples: https://nebius-tf-cutaway.lovable.app/",
       "reply": "Kimi writes structured part descriptions and Three.js builders. Cutaway builds the geometry in a sandbox, renders four views for review, then saves the result.\n\nThe demo explores saved output. The cookbook includes the generator.\n\nCode: https://github.com/nebius/token-factory-cookbook/tree/main/apps/cutaway",
-      "text_weighted_characters": 233,
+      "text_weighted_characters": 262,
       "reply_weighted_characters": 260,
       "publishing_status": "Draft — not posted",
       "walkthrough_audio": "Silent screen walkthrough",
@@ -60,5 +60,23 @@
     }
   ],
   "claims_note": "No fresh live model inference was run. Do not claim one prompt, a benchmark win, cost/time performance, manufacturer-accurate geometry, or that a particular model produced the original camera build.",
-  "verified_at": "2026-11-05T13:26:10Z"
+  "verified_at": "2026-11-05T13:26:10Z",
+  "upcoming": [
+    {
+      "name": "Paper to interactive explainer",
+      "builder": "Arindam Majumder",
+      "cookbook": "https://github.com/nebius/token-factory-cookbook/tree/main/apps/paper-to-interactive-explainer",
+      "cookbook_status": "Merged via PR #87",
+      "demo_status": "TF preview not yet hosted",
+      "next_step": "Get a generated HTML export; review its widgets, apply TF branding and record a walkthrough."
+    },
+    {
+      "name": "Napkin to 3D print",
+      "builder": "Arindam Majumder",
+      "cookbook": "https://github.com/nebius/token-factory-cookbook/tree/main/apps/napkin-to-3d-print",
+      "cookbook_status": "Merged via PR #87",
+      "demo_status": "TF preview not yet hosted",
+      "next_step": "Get one sketch with its generated STL/STEP output, validate the result and record a walkthrough."
+    }
+  ]
 }

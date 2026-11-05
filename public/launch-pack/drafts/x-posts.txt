@@ -5,9 +5,9 @@ All three demos are public. Cookbook PR #89 is merged.
 CUTAWAY
 
 POST
-Pull apart a jet engine in your browser.
+Learn how machines work by taking them apart.
 
-Cutaway uses Kimi K3.1 Pro on Nebius Token Factory to turn a name or photo into an interactive 3D machine.
+Give Cutaway a name or photo. Kimi K3.1 Pro on Nebius Token Factory builds an interactive 3D model you can pull apart and explore.
 
 Built by @Astrodevil_ / Studio1HQ.
 
