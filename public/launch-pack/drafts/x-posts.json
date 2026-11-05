@@ -12,7 +12,6 @@
       "name": "Cutaway",
       "builder": "Amitesh Anand / Studio1HQ",
       "source": "https://github.com/Studio1-OSS/Cutaway",
-      "fork": "https://github.com/demianarc/token-factory-cutaway",
       "demo": "https://nebius-tf-cutaway.lovable.app/",
       "cookbook": "https://github.com/nebius/token-factory-cookbook/tree/main/apps/cutaway",
       "video": "../media/cutaway-walkthrough.mp4",
@@ -22,14 +21,14 @@
       "reply_weighted_characters": 260,
       "publishing_status": "Draft — not posted",
       "walkthrough_audio": "Silent screen walkthrough",
-      "walkthrough_speed": "4×"
+      "walkthrough_speed": "4×",
+      "code": "https://github.com/nebius/token-factory-cookbook/tree/main/apps/cutaway"
     },
     {
       "id": "codetrail",
       "name": "Codetrail",
       "builder": "Studio1HQ",
       "source": "https://github.com/Studio1-OSS/Codetrail",
-      "fork": "https://github.com/demianarc/token-factory-codetrail",
       "demo": "https://nebius-tf-codetrail.lovable.app/",
       "cookbook": "https://github.com/nebius/token-factory-cookbook/tree/main/apps/codetrail",
       "video": "../media/codetrail-walkthrough.mp4",
@@ -39,14 +38,14 @@
       "reply_weighted_characters": 241,
       "publishing_status": "Draft — not posted",
       "walkthrough_audio": "Silent screen walkthrough",
-      "walkthrough_speed": "1×"
+      "walkthrough_speed": "1×",
+      "code": "https://github.com/nebius/token-factory-cookbook/tree/main/apps/codetrail"
     },
     {
       "id": "camera",
       "name": "Explode Anything",
       "builder": "Shivay Lamba",
       "source": "https://github.com/shivaylamba/explode-anything",
-      "fork": "https://github.com/demianarc/token-factory-explode",
       "demo": "https://nebius-tf-explode.lovable.app/",
       "cookbook": "https://github.com/nebius/token-factory-cookbook/tree/main/apps/explode-anything",
       "video": "../media/camera-walkthrough.mp4",
@@ -56,7 +55,8 @@
       "reply_weighted_characters": 243,
       "publishing_status": "Draft — not posted",
       "walkthrough_audio": "Silent screen walkthrough",
-      "walkthrough_speed": "2×"
+      "walkthrough_speed": "2×",
+      "code": "https://github.com/nebius/token-factory-cookbook/tree/main/apps/explode-anything"
     }
   ],
   "claims_note": "No fresh live model inference was run. Do not claim one prompt, a benchmark win, cost/time performance, manufacturer-accurate geometry, or that a particular model produced the original camera build.",
